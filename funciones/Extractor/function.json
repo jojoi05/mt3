@@ -1,0 +1,19 @@
+{
+  "bindings": [
+    {
+      "name": "myQueueItem",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "myqueue-items",
+      "connection": "AzureWebJobsStorage"
+    },
+    {
+      "type": "table",
+      "name": "inputTable",
+      "tableName": "Persons",
+      "take": 50,
+      "connection": "pruebamt302f8bf1_STORAGE",
+      "direction": "in"
+    }
+  ]
+}
